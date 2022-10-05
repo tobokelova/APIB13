@@ -5,6 +5,7 @@ import io.restassured.common.mapper.TypeRef;
 import io.restassured.response.Response;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,7 +28,8 @@ public class GameOfThrones {
             Map<String,Object> characterMap=parsedResponse.get(i);
             if(characterByHouseMap.containsKey(characterMap.get("house"))){
             }if(characterMap.get("house")!=null){
-                List<String>listOfNames=new ArrayList<>();
+                List<String>listOfNames=new hhh
+                ArrayList<>();
                 String name = characterMap.get("name").toString();
                 listOfNames.add(name);
                 characterByHouseMap.put(characterMap.get("house").toString(),listOfNames);
@@ -35,12 +37,5 @@ public class GameOfThrones {
         }
         System.out.println(characterByHouseMap);
     }
-}
-        }
-
-
-        Map<String,Object> characterMap =
-    }
-
 }
 
